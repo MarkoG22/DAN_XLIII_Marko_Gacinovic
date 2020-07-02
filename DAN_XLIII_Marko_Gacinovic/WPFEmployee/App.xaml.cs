@@ -6,12 +6,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
+using WPFEmployee.View;
+using WPFEmployee.ViewModel;
+
 namespace WPFEmployee
 {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
     public partial class App : Application
-    {
+    {        
     }
 }

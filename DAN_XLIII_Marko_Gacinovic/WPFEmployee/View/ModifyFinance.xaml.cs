@@ -10,21 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WPFEmployee.ViewModel;
 
-namespace WPFEmployee
+namespace WPFEmployee.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ModifyFinance.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ModifyFinance : Window
     {
-        public MainWindow()
+        public ModifyFinance()
         {
             InitializeComponent();
-            this.DataContext = new MainWindowViewModel(this);
         }
     }
 }

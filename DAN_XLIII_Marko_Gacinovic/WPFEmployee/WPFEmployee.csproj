@@ -94,7 +94,32 @@
     <Compile Include="Models\tblSector.cs">
       <DependentUpon>EmployeeEntityModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="View\Admin.xaml.cs">
+      <DependentUpon>Admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Employee.xaml.cs">
+      <DependentUpon>Employee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ModifyFinance.xaml.cs">
+      <DependentUpon>ModifyFinance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ModifyHR.xaml.cs">
+      <DependentUpon>ModifyHR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ModifyRD.xaml.cs">
+      <DependentUpon>ModifyRD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReadonlyFinance.xaml.cs">
+      <DependentUpon>ReadonlyFinance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReadonlyHR.xaml.cs">
+      <DependentUpon>ReadonlyHR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReadonlyRD.xaml.cs">
+      <DependentUpon>ReadonlyRD.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,6 +133,38 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\Admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Employee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ModifyFinance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ModifyHR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ModifyRD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ReadonlyFinance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ReadonlyHR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ReadonlyRD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -143,9 +200,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Models\EmployeeEntityModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
