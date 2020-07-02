@@ -94,6 +94,7 @@
     <Compile Include="Models\tblSector.cs">
       <DependentUpon>EmployeeEntityModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\AdminViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="View\Admin.xaml.cs">

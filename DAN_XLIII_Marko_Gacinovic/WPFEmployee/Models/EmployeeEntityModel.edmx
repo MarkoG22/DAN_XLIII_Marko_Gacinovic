@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="EmployeeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="EmployeeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tblAccessLevel">
           <Key>
             <PropertyRef Name="AccessLevelID" />
@@ -56,7 +56,7 @@
           <Property Name="SectorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SectorName" Type="varchar" MaxLength="10" />
         </EntityType>
-        <Association Name="FK__tblManage__Acces__440B1D61">
+        <Association Name="FK__tblManage__Acces__571DF1D5">
           <End Role="tblAccessLevel" Type="Self.tblAccessLevel" Multiplicity="1" />
           <End Role="tblManager" Type="Self.tblManager" Multiplicity="*" />
           <ReferentialConstraint>
@@ -68,7 +68,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__tblManage__Emplo__4222D4EF">
+        <Association Name="FK__tblManage__Emplo__5535A963">
           <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
           <End Role="tblManager" Type="Self.tblManager" Multiplicity="*" />
           <ReferentialConstraint>
@@ -80,7 +80,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__tblManage__Secto__4316F928">
+        <Association Name="FK__tblManage__Secto__5629CD9C">
           <End Role="tblSector" Type="Self.tblSector" Multiplicity="1" />
           <End Role="tblManager" Type="Self.tblManager" Multiplicity="*" />
           <ReferentialConstraint>
@@ -92,7 +92,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__tblReport__Emplo__46E78A0C">
+        <Association Name="FK__tblReport__Emplo__59FA5E80">
           <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
           <End Role="tblReport" Type="Self.tblReport" Multiplicity="*" />
           <ReferentialConstraint>
@@ -110,25 +110,24 @@
           <EntitySet Name="tblManager" EntityType="Self.tblManager" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblReport" EntityType="Self.tblReport" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblSector" EntityType="Self.tblSector" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__tblManage__Acces__440B1D61" Association="Self.FK__tblManage__Acces__440B1D61">
+          <AssociationSet Name="FK__tblManage__Acces__571DF1D5" Association="Self.FK__tblManage__Acces__571DF1D5">
             <End Role="tblAccessLevel" EntitySet="tblAccessLevel" />
             <End Role="tblManager" EntitySet="tblManager" />
           </AssociationSet>
-          <AssociationSet Name="FK__tblManage__Emplo__4222D4EF" Association="Self.FK__tblManage__Emplo__4222D4EF">
+          <AssociationSet Name="FK__tblManage__Emplo__5535A963" Association="Self.FK__tblManage__Emplo__5535A963">
             <End Role="tblEmployee" EntitySet="tblEmployee" />
             <End Role="tblManager" EntitySet="tblManager" />
           </AssociationSet>
-          <AssociationSet Name="FK__tblManage__Secto__4316F928" Association="Self.FK__tblManage__Secto__4316F928">
+          <AssociationSet Name="FK__tblManage__Secto__5629CD9C" Association="Self.FK__tblManage__Secto__5629CD9C">
             <End Role="tblSector" EntitySet="tblSector" />
             <End Role="tblManager" EntitySet="tblManager" />
           </AssociationSet>
-          <AssociationSet Name="FK__tblReport__Emplo__46E78A0C" Association="Self.FK__tblReport__Emplo__46E78A0C">
+          <AssociationSet Name="FK__tblReport__Emplo__59FA5E80" Association="Self.FK__tblReport__Emplo__59FA5E80">
             <End Role="tblEmployee" EntitySet="tblEmployee" />
             <End Role="tblReport" EntitySet="tblReport" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="EmployeeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
